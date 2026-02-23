@@ -1,0 +1,25 @@
+.text {
+    /* text-align: justify; */
+    /* text-align-last: center; */ 
+   /* direction: rtl; */
+    vertical-align: text-top;
+    /* text-decoration: line-through; */
+    line-height: 1,2;
+    text-indent: 50px;
+    letter-spacing: 1px;
+    word-spacing: 20px;
+    /* white-space: nowrap; */
+   overflow: hisdden;
+   text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    /* text-shadow: 0 0 10px rgb(216, 65, 65), -50px 7px 2px rgb(230, 106, 106),
+    -25px 7px 30px rgb(0, 0, 0); */
+    text-shadow: rgb(88, 18, 18) -10px 2px 5px;
+    font-family: sans-serif;
+    font-style: oblique;
+    font-size: 30px;
+    font-weight: 850;
+-webkit-box-shadow:0px 0px 255px 148px rgba(45,255,196,0.7);
+-moz-box-shadow: 0px 0px 255px 148px rgba(45,255,196,0.7);
+box-shadow: 0px 0px 255px 148px rgba(45,255,196,0.7);
+}

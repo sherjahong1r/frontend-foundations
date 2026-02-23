@@ -1,0 +1,49 @@
+h1 {
+    color: blue;
+
+}
+#blue {
+    text-shadow: 20px 10px ss5px red;
+
+}
+/* cssda comment qoldirish uchun */
+.center {
+    text-align: center;
+    background-color: red;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1051/1051277.png");
+
+}
+
+.card__wrapper {
+    display: flex; 
+}
+
+
+.card {
+    text-align: center;
+    flex: 1;
+    border: 1px solid;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+}
+
+
+.bg__red {
+    background-color: #ff5252;
+}
+#test {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1051/1051277.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+#test2 {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/5968/5968292.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+   /* background-attachment: fixed; */
+}
