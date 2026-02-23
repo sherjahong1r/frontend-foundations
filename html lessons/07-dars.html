@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+    <style>
+    h1 {
+        color: blue;
+        text-align: center;
+    }
+    h3 {
+        text-align: var(80%);
+        color: brown;
+    }
+    .btn {
+        cursor: pointer;
+    }
+    .link {
+        text-align: center;
+    }
+
+    .btn {
+    position: relative;
+    display: inline-block;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    background: rgb(197, 76, 76);
+    cursor: pointer;
+}
+    .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    /*left: 0;*/
+    right: 0;
+   /* bottom: 0;*/
+    content: "";
+    width: 10%;
+    height: 100%; 
+    background: rgb(165, 123, 123);
+    transition: 1s;
+}
+    .btn:hover::before {
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <form action="https://bookzon.herokuapp.com/api/sign-up" method="post"> 
+       <h1>Darsni ko'rish uchun kerak bo'ladigan talablar</h1>
+    <p>
+        <section id="home">
+            <h1><i class="fas fa-home"></i>home</h1>
+        </section>
+       <h3>basic information</h3>
+        <label for="First Name"> First Name </label>
+        <input type="text" name="First name" id="First name"/>
+        </p>
+        <p>
+            <label for="Last Name">
+                Last Name </label>
+                <input type="text" placeholder="ismingizni yozing" name="Last name"  id="Last Name" />
+            </p>
+        <p>
+            <label for="phone"> phone: </label>
+                <input 
+                 type="tel" required name="phone" id="phone"/>
+                
+            </p>
+            <p>
+                <label for="email"> email: </label>
+                    <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                    type="email" required name="email" id="email"/>
+                </p>
+            <p>
+                <label for="Password">Password</label>
+                <input type="password" minlength="6" name="password" />
+            </p>
+            <label for="age">yoshi</label>
+                <input type="number" name="age" min="20" max="65" />
+            </p>
+            <p>
+                <header>
+                    <nav>
+                        <ul class="link">
+                            <li>
+                                <button><a href="#your degree">darajani aniqlash</a></button>
+                            </li>
+                            <li>
+                                <button><a href="#oferani tasdiqlash">ofera bilan tanishish</a></button>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                
+            <p><h3>Your gender</h3></p>
+            <p>
+                <label for="erkak">Erkak</label>
+                <input type="radio" name="jinsi" id="erkak" />
+             </p>
+             <p>
+                <label for="ayol"> Ayol</label>
+                <input type="radio" name="jinsi" id="erkak" />
+             </p>
+             <p><h3>Your course </h3></p>
+             <p>
+             <label for="cpp">C++</label>
+             <input type="checkbox" id="cpp" name="planguage" value="cpp"/>
+             </p>
+             <p>
+                <label for="js">Javascrip</label>
+                <input type="checkbox" id="js" name="planguage" value="js"/>
+             </p>
+             <p>
+                <label for="python">Python</label>
+                <input type="checkbox" id="python" name="planguage" value="python"/>
+             </p>
+             <p>
+                <label for="csharp">C#</label>
+                <input type="checkbox" id="csharp" name="planguage" value="csharp"/>
+             </p>
+             <p> <h3>started day</h3>
+             <input type="date" name="dob" min="2022-10-02"/>
+             </p>
+            <section id="your degree">
+             <p>
+
+            <h3>your degree</h3>
+                <select name="degree" multiple size="2" id="degree">
+                    <option value="">sizning darajangiz</option>
+                    <option value="1">beginer</option>
+                    <option value="2">elementary</option>
+                </select>
+             </p>
+             </section>
+             
+            
+            <label for="favColor"><h3>Your favourite color:</h3></label> 
+            <input type="color" name="color" value="#eeeeee"/>
+             <p>
+                <label for="favColor">Your resume</label>
+                <input type="file" name="resume" />
+             </p>
+
+              <h3>your close friend name and information about his job</h3>
+              <input type="search" list="userName" name="userName" />
+            <datalist id="userName">
+                <option value="ahmat"></option>
+                <option value="ali">Ali</option>
+                <option value="vali">Vali</option>
+                <option value="tom">Tom</option>
+                <option value="jim">Jim</option>
+                <option value="tim">Tim</option>
+            </datalist>
+
+            <textarea name="message" maxlength="20" id="massage" cols="30" rows="10">agsdnsnjhjk</textarea>
+            
+
+             <p><h3>choose role</h3></p>
+             <p>
+                <label for="reader"> reader: </label>
+                <input type="radio" name="role" id="reader" />
+             </p>
+             
+             <p>
+             <label for="reader"> author: </label>
+             <input type="radio" name="role" id="reader" />
+             </p>
+             <button type="submit">Yuborish</button>
+             <button type="reset">Tozalash</button>
+             <section id="oferani tasdiqlash">
+                <p>
+                    <h1>ofera shartlari</h1>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus facilis commodi adipisci perspiciatis odio quaerat non reiciendis fuga nostrum ad dolore odit aliquid deserunt hic, quisquam dicta iure error, vero quasi ipsum quos sunt recusandae nemo iste. Delectus quae quisquam, quam totam voluptatem molestias nihil deserunt repellat, voluptatum recusandae libero, itaque quasi! Natus voluptate debitis perferendis sint ut quaerat sed omnis fugit veritatis, eius adipisci architecto vero. Non provident similique saepe voluptas soluta aliquam qui ducimus corrupti, mollitia dolor! Laudantium earum quasi molestiae fugiat ratione natus saepe voluptatibus eum illo eius, illum corrupti ullam ab doloribus officia totam iure non corporis nulla aperiam veniam nam. Ea asperiores eum harum dicta libero nulla repellat commodi itaque inventore ullam nesciunt repellendus in, debitis ipsa, fugit deleniti magnam provident mollitia natus assumenda quidem vel. Repellat numquam distinctio repudiandae vitae illum quos esse. Odit, sint! Labore necessitatibus debitis qui iure non explicabo ipsam eius quia tempora repellat corporis fugit sint, doloribus error! Labore pariatur sint molestias dolores obcaecati, corporis necessitatibus ipsa minima deserunt modi itaque veniam ducimus quibusdam rerum ea omnis quidem molestiae libero? Quas, eveniet repudiandae? A, sit obcaecati porro nemo eum illum nesciunt possimus perferendis maiores officiis. Possimus assumenda libero velit repellat!</h3>
+                </p>
+             </section>
+             <section>
+             
+                    <nav>
+                        <ul>
+                            <li>
+                               <button class="btn">roziman</button>
+
+                               <button> <a href="#home">back home</a>
+                               <i class="fas fa-home"></i>
+                            </button>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+
+</body>
+</html>
